@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import LeftContainer from "./subcomponents/LeftContainer";
 import RightContainer from "./subcomponents/RightContainer";
 import { Product } from "../../types/items";
-import { ApolloError } from "@apollo/client";
 
 interface Props {
   product: Product;
@@ -19,7 +17,7 @@ const ItemCard: React.FC<Props> = ({
   handleModalDecrementItem,
 }) => {
   return (
-    <div className="h-[100%] md:h-[85%] w-[100%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 md:rounded-2xl overflow-y-scroll md:overflow-y-clip scrollbar-hide">
+    <div className="h-[100%] md:h-[90%] w-[100%] md:w-[95%] lg:w-[90%] xl:w-[85%] mx-auto bg-white md:rounded-2xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 scrollbar-hide border border-gray-100">
       <LeftContainer product={product} />
       <RightContainer
         product={product}
