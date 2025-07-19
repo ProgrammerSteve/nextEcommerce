@@ -254,7 +254,7 @@ const RightContainer: React.FC<Props> = ({
                     </span>
                   </div>
                   <p className="text-sm text-gray-700">
-                    "Excellent quality and fast shipping. Exactly as described!"
+                    &quot;Excellent quality and fast shipping. Exactly as described!&quot;
                   </p>
                 </div>
 
@@ -266,7 +266,7 @@ const RightContainer: React.FC<Props> = ({
                     </span>
                   </div>
                   <p className="text-sm text-gray-700">
-                    "Great product, would recommend to others."
+                    &quot;Great product, would recommend to others.&quot;
                   </p>
                 </div>
               </div>

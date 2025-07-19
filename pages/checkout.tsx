@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { getSession } from "next-auth/react";
 import { GetServerSideProps } from "next";
 import { NextPage } from "next/types";
@@ -445,12 +446,12 @@ const Checkout: NextPage<Props> = ({ data }) => {
           <p className="text-gray-600 mb-6">
             Add some items to your cart before checking out.
           </p>
-          <a
+          <Link
             href="/"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
           >
             Continue Shopping
-          </a>
+          </Link>
         </div>
       </div>
     );
